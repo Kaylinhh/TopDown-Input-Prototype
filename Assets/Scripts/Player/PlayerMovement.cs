@@ -13,8 +13,20 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    void Update()
+    {
+        if (GameManager.instance != null && GameManager.instance.IsGameOver)
+        {
+            rb.linearVelocity = Vector2.zero; // stop le mouvement
+            return;
+        }
+    } 
+
     void FixedUpdate()
     {
+        if (GameManager.instance != null && GameManager.instance.IsGameOver)
+                return;
+
         rb.linearVelocity = moveInput * speed;
     }
 
