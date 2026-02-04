@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (GameManager.instance != null && GameManager.instance.IsGameOver)
         {
-            rb.linearVelocity = Vector2.zero; // stop le mouvement
+            rb.linearVelocity = Vector2.zero; 
             return;
         }
     } 
