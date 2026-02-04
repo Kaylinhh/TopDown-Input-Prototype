@@ -5,8 +5,8 @@ public class PickupSpawner : MonoBehaviour
 {
     public GameObject pickupPrefab;
     public int maxPickups = 5;
-    public Vector2 spawnAreaMin = new Vector2(-5, -5);
-    public Vector2 spawnAreaMax = new Vector2(5, 5);
+    public Vector2 spawnAreaMin = new Vector2(-7, -2);
+    public Vector2 spawnAreaMax = new Vector2(7, 2);
     private List<GameObject> currentPickups = new List<GameObject>();
 
     void Start()
