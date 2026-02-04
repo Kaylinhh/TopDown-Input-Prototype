@@ -460,8 +460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PickupSpawner
   pickupPrefab: {fileID: 5617045364387616701, guid: 429858dbed4612245ac251978be7de4a, type: 3}
   maxPickups: 5
-  spawnAreaMin: {x: -5, y: -5}
-  spawnAreaMax: {x: 5, y: 5}
+  spawnAreaMin: {x: -7, y: -3}
+  spawnAreaMax: {x: 7, y: 3}
 --- !u!114 &809512706
 MonoBehaviour:
   m_ObjectHideFlags: 0
